@@ -102,7 +102,7 @@ function display (arr) {
                         Price: <span class="font-normal">N1000</span>
                     </p>
                     <p class="font-medium text-sm py-1 text-right">
-                    <i class="fa-solid fa-magnifying-glass mr-5"> aldsk</i><span>${arr[i].likes}</span>
+                    <i class="fa-solid fa-magnifying-glass mr-5 like" id=${arr[i].id}> like</i><span>${arr[i].likes}</span>
                     </p>
 
                 </div>
@@ -143,6 +143,11 @@ orders(storeMovies)
 console.log(newArr)
 
 
+document.querySelectorAll('.like').forEach((like) => {
+    like.addEventListener('click', () => {
+        like.ger
+    })
+})
 
 
 
